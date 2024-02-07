@@ -1,0 +1,143 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #0D1D25;
+}
+
+.menu {
+    width: 200px; /* Ancho del menú vertical */
+    background-color: #fff7d1; /* Color de fondo */
+    padding: 10px;
+    position: fixed;
+    left: 0; /* Ubicación a la izquierda */
+    top: 0; /* Alineado con la parte superior */
+    height: 100%; /* Menú toma el 100% del alto */
+    overflow-y: auto; /* Hacer scroll si hay demasiados elementos */
+}
+
+    .menu ul {
+        list-style-type: none;
+        margin-bottom: 10px;
+        padding: 0;
+
+
+    }
+.contenido {
+    margin-left: 400px; /* Deja espacio a la izquierda del menú */
+    padding: 20px; /* Espaciado interno */
+    font-family: Nunito;
+}
+    .contenido h1 {
+        font-family: Circulito;
+    color:lightgray;
+    }
+    .contenido h3 {
+    color:darkgray;
+    }
+    .contenido label {
+    color: white;
+    }
+    .contenido ul {
+        list-style-type: none; /* Quita los estilos de viñetas predeterminados */
+        padding: 10px; /* Elimina el relleno interno */
+        display: flex; /* Utiliza flexbox */
+        bottom:0;
+    }
+        .contenido ul li {
+            margin-right:10px
+        }
+
+
+@font-face {
+    font-family: 'Nunito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/Nunito.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Circulito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+.bn5 {
+    font-family: Nunito;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #2d5062;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+    .bn5:before {
+        content: "";
+        background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000 );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowingbn5 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+@keyframes glowingbn5 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bn5:active {
+    color: #000;
+}
+
+    .bn5:active:after {
+        background: transparent;
+    }
+
+.bn5:hover:before {
+    opacity: 1;
+}
+
+.bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
