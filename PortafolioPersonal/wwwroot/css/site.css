@@ -18,6 +18,32 @@ body {
     margin-bottom: 60px;
     background-color: #0D1D25;
 }
+.filaimg {
+    margin-top: 40px;
+    list-style: none; /* Quita los estilos de viñeta predeterminados */
+    padding: 0; /* Elimina el relleno interno */
+    font-family:Circulito;
+    
+}
+
+    .filaimg li {
+       
+        display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-bottom: 10px; /* Espacio entre filas */
+    }
+
+    .filaimg ul img {
+        margin-left:8px;
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+    }
+
+.filaimg li label {
+    margin-left:3px;
+    font-size:25px;
+}
 
 .menu {
     width: 200px; /* Ancho del menú vertical */
@@ -29,19 +55,13 @@ body {
     height: 100%; /* Menú toma el 100% del alto */
     overflow-y: auto; /* Hacer scroll si hay demasiados elementos */
 }
-
-    .menu ul {
-        margin-left:15px;
-        list-style-type: none;
-        margin-bottom: 10px;
-        padding: 0;
-
-
-    }
-        .menu ul img {
+.imagenPerfil{
+        margin-top:20px;
         height:200px;
-        width:160px; 
+        width:170px; 
         border-radius:100px;
+        margin-right:35px
+
         }
 
 .gray {
@@ -63,7 +83,7 @@ body {
     margin-left: 400px; /* Deja espacio a la izquierda del menú */
     padding: 20px; /* Espaciado interno */
     font-family: Nunito;
-    margin-top:100px;
+    margin-top:70px;
 }
     
     .contenido h1 {
