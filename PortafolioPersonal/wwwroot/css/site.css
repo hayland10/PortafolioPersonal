@@ -31,20 +31,45 @@ body {
 }
 
     .menu ul {
+        margin-left:15px;
         list-style-type: none;
         margin-bottom: 10px;
         padding: 0;
 
 
     }
+        .menu ul img {
+        height:200px;
+        width:160px; 
+        border-radius:100px;
+        }
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.cabeza {
+    display: flex;
+    align-items: center;
+}
+    .cabeza h1 {
+    margin-right:20px;
+    }
+    .cabeza img {
+    height:50px;
+    width:50px;
+    }
 .contenido {
     margin-left: 400px; /* Deja espacio a la izquierda del menú */
     padding: 20px; /* Espaciado interno */
     font-family: Nunito;
+    margin-top:100px;
 }
+    
     .contenido h1 {
         font-family: Circulito;
-    color:lightgray;
+        color:lightgray;
+        margin-right:10px;
     }
     .contenido h3 {
     color:darkgray;
