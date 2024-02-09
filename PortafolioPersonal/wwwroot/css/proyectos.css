@@ -7,6 +7,7 @@
 }
 
 .bn3637 {
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +15,6 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-    text-decoration: none;
     color: ##446474;
     backface-visibility: hidden;
     border: 0.3rem solid transparent;
@@ -22,11 +22,13 @@
 }
 
 .bn38 {
+    text-decoration: none;
     border-color: transparent;
     transition: background-color 0.3s ease-in-out;
 }
 
     .bn38:hover {
+        text-decoration: none;
         background-color: darkgray;
     }
 
