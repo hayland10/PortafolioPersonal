@@ -1,4 +1,21 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿import { Component } from '@angular/core';
 
-// Write your JavaScript code.
+@Component({
+    selector: 'app-tu-componente',
+    templateUrl: './tu-componente.component.html',
+    styleUrls: ['./tu-componente.component.css']
+})
+export class TuComponenteComponent {
+    correoElectronico: string = 'haylandsebastian5@hotmail.com';
+
+    copiarCorreo() {
+        const el = document.createElement('textarea');
+        el.value = this.correoElectronico;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        alert('Correo copiado al portapapeles: ' + this.correoElectronico);
+    }
+}
+

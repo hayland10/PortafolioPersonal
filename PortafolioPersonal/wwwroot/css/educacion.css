@@ -1,0 +1,98 @@
+﻿body {
+    margin-bottom: 60px;
+    background-color: #fff7d1;
+    margin: 0;
+    padding: 0;
+    font-family:Circulito;
+}
+
+@font-face {
+    font-family: 'Circulito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+.cabecera {
+    text-align: center;
+    color: #446474;
+    font-family: Circulito;
+    font-size: x-large;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tarjeta1,
+.tarjeta2 {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    width: 200px; /* Ancho inicial */
+    transition: width 0.3s ease;
+    overflow: hidden; /* Oculta el contenido que desborda */
+}
+
+    .tarjeta1 img,
+    .tarjeta2 img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .tarjeta1 h3,
+    .tarjeta2 h3 {
+        color: #1e3799;
+        margin-bottom: 10px; /* Añade margen inferior para separar la imagen */
+        font-family:Circulito;
+    }
+
+    .tarjeta1 p,
+    .tarjeta2 p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Circulito;
+    }
+
+    .tarjeta1 h4,
+    .tarjeta2 h4 {
+        color: #1e3799;
+        margin-top: 10px;
+        font-family:Circulito;
+    }
+
+    .tarjeta1:hover,
+    .tarjeta2:hover {
+        width: 250px; /* Ancho al agrandarse */
+    }
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #446474;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .bn38:hover {
+        background-color: darkgray;
+    }
+
+.posiBTN {
+margin-left:20px;
+}
