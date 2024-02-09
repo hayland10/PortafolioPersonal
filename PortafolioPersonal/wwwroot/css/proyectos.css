@@ -1,0 +1,72 @@
+﻿body {
+    background-color: #2a2f32;
+}
+@font-face {
+    font-family: 'Circulito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: ##446474;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .bn38:hover {
+        background-color: darkgray;
+    }
+
+.posiBTN {
+    margin-left: 20px;
+}
+.cabecera {
+    margin-top: 85px;
+    text-align: center;
+    color: #446474;
+    font-family: Circulito;
+    font-size:xx-large;
+}
+
+.tarjeta {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px;
+}
+
+    .tarjeta .tarjeta-contenido {
+        width: 200px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+
+    .tarjeta:hover .tarjeta-contenido {
+        transform: rotateY(180deg);
+    }
+
+    .tarjeta .cara-frontal,
+    .tarjeta .cara-trasera {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .tarjeta .cara-trasera {
+        transform: rotateY(180deg);
+    }
+

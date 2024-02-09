@@ -1,0 +1,59 @@
+﻿@using PortafolioPersonal.Models;
+@{
+    Layout = null;
+
+    // Lista de proyectos
+    List<Proyecto> proyectos = new List<Proyecto>
+    {
+        new Proyecto { Titulo = "Aurora Mobile App", ImagenUrl = "/img/aurora.jpeg", Descripcion = "(.Net C#) Es una aplicacion mobil desarrollada para que las discotecas puedan gestionar sus reservas de una mejor manera (reservar fiesta, cocteles), esta destinada solamente para el uso del cliente, usa una API local que esta conectada a una BD y a la app MVC del admin gestionara las reservas y las fiestas" },
+        new Proyecto { Titulo = "Fast Cleaning App", ImagenUrl = "/img/fast.jpeg", Descripcion = "(JAVA) App de escritorio diseñada para la compra, venta y facturacion de una lavanderia, diseñada para automatizar el proceso de la empresa y proporcionar el servicio a domicilio dando funcionalidades de status, tiene perfil de admin y perfil de cliente." },
+        new Proyecto { Titulo = "Aurora API", ImagenUrl = "/img/api.jpeg", Descripcion = "(.Net C#) API local creada para ser consumida en AuroraMobilApp y AuroraMVC, tiene metodos CRUD para que se gestionen fiestas y reservas" },
+        new Proyecto { Titulo = "Aurora Admin MVC", ImagenUrl = "/img/mvc.jpeg", Descripcion = "(.Net C#, HTML, CSS) WebApp desarrollada para el Administrador, el mismo podra observar las reservas a su discoteca guardadas en la BD y podra subir y eliminar las fiestas para mostrarlas en la MobilApp." }
+    };
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROYECTOS</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/proyectos.css">
+</head>
+<body>
+    <div class="cabecera">
+        <h1>PROYECTOS</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var proyecto in proyectos)
+            {
+                <div class="col-md-3">
+                    <div class="tarjeta">
+                        <div class="tarjeta-contenido">
+                            <div class="cara-frontal">
+                                <div class="card">
+                                    <img src="@proyecto.ImagenUrl" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@proyecto.Titulo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cara-trasera">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-text">@proyecto.Descripcion</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="posiBTN">
+        <a href="/" class="bn3637 bn38">Regresar</a>
+        </div>
+    </div>
+    <
+</body>
+</html>
