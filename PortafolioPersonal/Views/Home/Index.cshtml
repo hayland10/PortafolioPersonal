@@ -3,8 +3,9 @@
 <html>
     <head>
         <title>Hayland Montalvo</title>
-    <link rel="stylesheet" type="text/css" href="/css/site.css">
-
+        <link rel="stylesheet" type="text/css" href="/css/site.css">
+    
+   
     </head>
     <body>
         <nav class="menu">
@@ -18,11 +19,11 @@
                 <li>
                     <label>CONTACTO:</label>
                 </li>
-                <li title="Email"> 
-                    <a class="bn5"> <img src="/img/email.png" /> Email</a>
+                <li title="Email" onclick="emailClicked()" > 
+                    <a  class="bn5"> <img src="/img/email.png" /> Email</a>
                 </li>
 
-                <li title="Celular"> 
+                <li title="Celular" onclick="celClicked()">
                     <a class="bn5">   <img src="/img/wpp.png" /> Celular</a>
                 </li> 
                 <li title="Instagram">
@@ -132,6 +133,10 @@
             </ul>
         
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="/js/site.js"> </script>
     </body>
 </html>
 
