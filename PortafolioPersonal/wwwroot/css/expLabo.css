@@ -6,6 +6,7 @@
 }
 
 .container {
+    margin-top:0px;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -80,4 +81,32 @@ h5 {
 @font-face {
     font-family: 'Circulito';
     src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #446474;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .bn38:hover {
+        background-color: darkgray;
+    }
+
+.posiBTN {
+    margin-left: 20px;
 }
