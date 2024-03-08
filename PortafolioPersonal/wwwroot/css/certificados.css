@@ -1,0 +1,146 @@
+﻿
+body {
+    margin-bottom: 60px;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    font-family: Circulito;
+}
+
+@font-face {
+    font-family: 'Circulito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+.cabecera {
+    margin-top: 60px; 
+    text-align: center;
+    color: #446474;
+    font-family: Circulito;
+    font-size: x-large;
+}
+.data {
+    padding:15px;
+    width: 80%; /* Ajusta el ancho del contenido según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+    .data h1 {
+    padding:10px;
+    }
+    .data p {
+        padding: 10px;
+    }
+    .data img {
+        position: center;
+        padding: 10px;
+    }
+    
+
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.carrousel {
+    
+    width: 80%; /* Ajusta el ancho del carrusel según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    border: 3px solid black; /* Agrega un borde al carrusel */
+    border-radius: 10px; /* Aplica bordes redondeados al carrusel */
+}
+
+.conteCarrousel {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.itemCarrousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta {
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+    .itemCarrouselArrows > i:hover {
+        cursor: pointer;
+    }
+
+#itemCarrousel-1 {
+    background-color: darkred;
+}
+
+#itemCarrousel-2 {
+    background-color:darkolivegreen;
+}
+
+#itemCarrousel-3 {
+    background-color: darkslategrey;
+}
+
+.conteCarrouselController {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .conteCarrouselController > a {
+        text-decoration: none;
+        font-size: 2em;
+        color: grey;
+    }
+
+.itemCarrouselArrows > a > i {
+    color: white;
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #446474;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .bn38:hover {
+        background-color: darkgray;
+    }
+
+.posiBTN {
+    margin-left: 20px;
+}
+img {
+    width: 300px;
+    border-radius: 10%;
+}
