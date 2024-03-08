@@ -1,0 +1,83 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Circulito;
+    background-color: #F5F5DC;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Establece el contenedor al 100% de la altura de la ventana */
+    margin-right:30px;
+}
+
+.cabecera {
+    text-align: center;
+    color: #446474;
+    font-size: x-large;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.tarjeta {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 300px; /* Ajustar el ancho deseado */
+    height: 400px; /* Ajustar la altura deseada */
+}
+
+    .tarjeta .imagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain; /* Ajusta la imagen para que se vea completa */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen */
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .tarjeta .contenido {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .tarjeta.hover .contenido {
+        opacity: 1;
+    }
+
+    .tarjeta.hover .imagen {
+        opacity: 0;
+    }
+
+h2 {
+    color: darkred;
+}
+
+h5 {
+    color: gray;
+}
+
+@font-face {
+    font-family: 'Circulito';
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}

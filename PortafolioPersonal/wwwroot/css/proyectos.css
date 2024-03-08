@@ -1,19 +1,12 @@
 ﻿body {
     background-color: #F5F5DC;
+    color: darkred;
 }
+
 @font-face {
     font-family: 'Circulito'; /* Nombre de la fuente personalizada */
     src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
 }
-h5 {
- 
-color: darkred;
-}
-p {
-    
-    color: darkred;
-}
-
 .bn3637 {
     text-decoration: none;
     display: inline-flex;
@@ -43,21 +36,21 @@ p {
 .posiBTN {
     margin-left: 20px;
 }
+
 .cabecera {
-    margin-top: 85px;
+    color:darkred;
+    margin-top: 60px;
     text-align: center;
-    color: darkred;
     font-family: Circulito;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 .tarjeta {
     perspective: 1000px;
     display: inline-block;
     margin: 0px;
-
 }
-    
+
 
     .tarjeta .tarjeta-contenido {
         width: 200px;
@@ -65,12 +58,10 @@ p {
         border: 30px;
         transform-style: preserve-3d;
         transition: transform 0.5s;
-       
     }
 
     .tarjeta:hover .tarjeta-contenido {
         transform: rotateY(180deg);
-        
     }
 
     .tarjeta .cara-frontal,
@@ -80,11 +71,8 @@ p {
         border: 30px;
         position: absolute;
         backface-visibility: hidden;
-       
     }
 
     .tarjeta .cara-trasera {
         transform: rotateY(180deg);
-        
     }
-

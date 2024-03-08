@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exp Laboral
+        </title>
+        <link rel="stylesheet" type="text/css" href="/css/expLabo.css" />
+    </head>
+    <body>
+    <div class="container">
+        <div class="cabecera">
+            <h1>Experiencia Laboral</h1>
+        </div>
+
+        <div class="grid-container">
+            <div class="tarjeta hover-effect">
+                <div class="imagen" style="background-image: url('/img/vienesa.png')"></div>
+                <div class="contenido">
+                    <h2>Panaderia La Vienesa</h2>
+                    <h4>Atencion al Cliente</h4>
+                    <h5>Ago 2023 - Sep 2023</h5>
+                    <p>Caja, Atencion al cliente, Inventario, Despacho.</p>
+                    <a href="" target="_blank">Red social de la empresa</a>
+                </div>
+            </div>
+
+            <div class="tarjeta hover-effect">
+                <div class="imagen" style="background-image: url('/img/andaluza.png')"></div>
+                <div class="contenido">
+                    <h2>Embutidos La Andaluza</h2>
+                    <h4>Atencion al Cliente</h4>
+                    <h5>Ago 2023 - Sep 2023</h5>
+                    <p>Barismo, Caja, Corte de Embutidos, Cocina, Despacho.</p>
+                    <a href="" target="_blank">Red social de la empresa</a>
+                </div>
+            </div>
+
+            <div class="tarjeta hover-effect">
+                <div class="imagen" style="background-image: url('/img/irati.png')"></div>
+                <div class="contenido">
+                    <h2>Irati Restaurante</h2>
+                    <h4>Barman / Ing Sistemas</h4>
+                    <h5>Feb 2024 - Marzo 2024</h5>
+                    <p>Mantenimiento base de datos, Inventario, Cocteleria.</p>
+                    <a href="" target="_blank">Red social de la empresa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const tarjetas = document.querySelectorAll('.tarjeta');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener('mouseenter', () => {
+                tarjeta.classList.add('hover');
+            });
+
+            tarjeta.addEventListener('mouseleave', () => {
+                tarjeta.classList.remove('hover');
+            });
+        });
+    </script>
+    </body>
+</html>
