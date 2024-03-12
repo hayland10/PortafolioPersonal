@@ -1,4 +1,10 @@
-﻿
+﻿function idiomaClicked() {
+    Swal.fire({
+        title: "IDIOMAS",
+        text: "texto"
+
+    });
+}
 function emailClicked() {
     Swal.fire({
         title: "EMAIL",
@@ -19,5 +25,6 @@ function celClicked() {
         imageAlt: "Whatsapp"
     });
 }
+
 
 

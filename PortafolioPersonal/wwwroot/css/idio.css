@@ -1,0 +1,39 @@
+﻿.cabecera {
+    color: darkred;
+    margin-top: 60px;
+    text-align: center;
+    font-family: Circulito;
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: 'Circulito'; /* Nombre de la fuente personalizada */
+    src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+}
+
+h4, p {
+    font-size: x-large;
+    filter: none; /* Anula el desenfoque para estos elementos */
+    font-family: Circulito;
+}
+
+.imagen {
+    height: 150px;
+    width: 150px;
+}
+
+.lista {
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta {
+    color: white;
+    background-color: darkred;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
