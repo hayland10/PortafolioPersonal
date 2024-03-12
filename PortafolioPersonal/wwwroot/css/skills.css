@@ -1,44 +1,43 @@
-﻿.cabecera
-
-{
-    color: darkred;
+﻿.body {
+    background-color: #F5F5DC;
+    font-family: Circulito;
+}
+.cabecera {
+    color: #0D1D25;
     margin-top: 25px;
     text-align: center;
-    font-family: Circulito;
+    font-family: 'Circulito', sans-serif;
     font-size: xx-large;
 }
-
 @font-face {
     font-family: 'Circulito'; /* Nombre de la fuente personalizada */
     src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
 }
 
-h4, p {
-    font-size: x-large;
-    filter: none; /* Anula el desenfoque para estos elementos */
-    font-family: Circulito;
-}
-
-.imagen {
-    height: 150px;
-    width: 150px;
-}
-
-.lista {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 25px auto;
 }
 
 .tarjeta {
-    color: white;
-    background-color: darkred;
-    padding: 15px;
-    margin: 10px;
+    text-align: center;
+    background-color: white;
+    color: black; /* Cambiamos el color del texto a blanco para que se destaque */
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0D1D25;
+  
+    font-family: Circulito;
 }
+
+    .tarjeta img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
 .bn3637 {
     text-decoration: none;
     display: inline-flex;
